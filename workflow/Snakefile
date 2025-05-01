@@ -8,10 +8,10 @@ include: 'rules/statistics.smk'
 include: 'rules/locations.smk'
 
 def get_function_locations(wildcards):
-    if "functions" in config and config["functions"]:
-        return f"{config['metadata']}/function_locations.txt"
-    else:
-        return ""
+    filelist = []
+    if config["functions"]:
+        filelist.append(f"{config['metadata']}/function_locations.txt")
+    return filelist
 
 rule all:
     input:
