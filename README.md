@@ -44,7 +44,7 @@ InterProScan is required for the functional annotation step which is enabled by 
 Please follow the instructions on the [InterProScan website](https://interproscan-docs.readthedocs.io/en/v5/HowToDownload.html) to install InterProScan.
 You can test if InterProScan is installed correctly by running the following command:
 ```bash
-interproscan.sh -h
+interproscan.sh --help
 ``````
 
 ## Input data
